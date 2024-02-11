@@ -1,5 +1,6 @@
 package com.teachmeskills.lesson9.task_1.run;
 
+import com.teachmeskills.lesson9.task_1.shape.*;
 import com.teachmeskills.lesson9.task_1.shape.impl.*;
 
 /**

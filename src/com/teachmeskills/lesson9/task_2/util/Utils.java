@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.task_2;
+package com.teachmeskills.lesson9.task_2.util;
 
 import java.util.Arrays;
 

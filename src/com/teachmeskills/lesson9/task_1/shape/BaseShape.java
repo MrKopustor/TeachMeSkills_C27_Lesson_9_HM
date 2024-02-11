@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.task_1.shape.impl;
+package com.teachmeskills.lesson9.task_1.shape;
 
 import com.teachmeskills.lesson9.task_1.shape.impl.*;
 

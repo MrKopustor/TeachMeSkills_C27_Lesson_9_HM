@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.task_1.shape.impl;
+package com.teachmeskills.lesson9.task_1.shape;
 
 /**
  * Create the Square class and inherit the BaseShape class

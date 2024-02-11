@@ -1,6 +1,6 @@
-package com.teachmeskills.lesson9.task_2.fabric;
+package com.teachmeskills.lesson9.task_2.operation;
 
-public class MatrixOperations {
+public class MatrixOperation {
 
     public static int[][] matrixMultiplication(int[][] a, int[][] b) {
         int[][] matrixM = new int[a.length][b[0].length];
@@ -14,4 +14,14 @@ public class MatrixOperations {
         }
         return matrixM;
     }
+
+    //TODO сделать метод на проверку матриц, можно их умножать или нет. Проверка if
+//    public static void checkValid() {
+//        if (a[0].length != b.length) {
+//            System.out.println("Умножение матриц невозможно");
+//            return;
+//        }
+//    }
+
+
 }
