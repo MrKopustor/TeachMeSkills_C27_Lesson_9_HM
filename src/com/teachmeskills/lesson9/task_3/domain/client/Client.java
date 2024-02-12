@@ -1,6 +1,7 @@
-package com.teachmeskills.lesson9.task_3.client;
+package com.teachmeskills.lesson9.task_3.domain.client;
 
-import com.teachmeskills.lesson9.task_3.card.BaseCard;
+import com.teachmeskills.lesson9.task_3.domain.address.ClientAddress;
+import com.teachmeskills.lesson9.task_3.domain.card.BaseCard;
 
 public class Client {
 
@@ -8,10 +9,16 @@ public class Client {
     private String surname;
     private String numberPassport;
     private String dateBirth;
-    private String address;
+    private ClientAddress address;
     private BaseCard[] cads;
 
-    public Client(String name, String surname, String numberPassport, String dateBirth, String address, BaseCard[] cads) {
+    public Client(String name, String surname, String numberPassport) {
+        this.name = name;
+        this.surname = surname;
+        this.numberPassport = numberPassport;
+    }
+
+    public Client(String name, String surname, String numberPassport, String dateBirth, ClientAddress address, BaseCard[] cads) {
         this.name = name;
         this.surname = surname;
         this.numberPassport = numberPassport;
@@ -52,11 +59,11 @@ public class Client {
         this.dateBirth = dateBirth;
     }
 
-    public String getAddress() {
+    public ClientAddress getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(ClientAddress address) {
         this.address = address;
     }
 
