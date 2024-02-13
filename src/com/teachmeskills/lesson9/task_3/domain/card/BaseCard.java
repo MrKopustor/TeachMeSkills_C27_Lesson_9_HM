@@ -9,10 +9,19 @@ public abstract sealed class BaseCard permits BelCard, MasterCard, VisaCard {
     protected long id;
     protected double currentBalance;
     protected double commissionPercentage;
-    protected String cardNumber;
+    protected long cardNumber;
 
-
-
+    public BaseCard(long cardNumber,
+                    long id,
+                    int cvc,
+                    double currentBalance,
+                    int currencyCode) {
+        this.cvc = cvc;
+        this.currencyCode = currencyCode;
+        this.id = id;
+        this.currentBalance = currentBalance;
+        this.cardNumber = cardNumber;
+    }
 
     public BaseCard() {
         this.id = ++counter;
@@ -68,11 +77,11 @@ public abstract sealed class BaseCard permits BelCard, MasterCard, VisaCard {
         this.commissionPercentage = commissionPercentage;
     }
 
-    public String getCardNumber() {
+    public long getCardNumber() {
         return cardNumber;
     }
 
-    public void setCardNumber(String cardNumber) {
+    public void setCardNumber(long cardNumber) {
         this.cardNumber = cardNumber;
     }
 }

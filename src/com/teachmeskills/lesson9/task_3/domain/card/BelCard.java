@@ -5,7 +5,8 @@ import com.teachmeskills.lesson9.task_3.constant.ICurrencyCodeConst;
 import com.teachmeskills.lesson9.task_3.constant.ILimitConst;
 
 public final class BelCard extends BaseCard {
-    public BelCard(){
+    public BelCard(long cardNumber, long id, int cvc, double currentBalance, int currencyCode) {
+        super(cardNumber, id, cvc, currentBalance, currencyCode);
         this.currencyCode = ICurrencyCodeConst.BYN_CURRENCY_CODE;
         this.commissionPercentage = ICommissionConst.BEL_CARD_COMMISSION;
     }

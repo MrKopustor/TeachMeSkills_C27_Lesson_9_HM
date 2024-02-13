@@ -1,6 +1,12 @@
 package com.teachmeskills.lesson9.task_3.run;
 
+import com.teachmeskills.lesson9.task_3.domain.card.BaseCard;
+import com.teachmeskills.lesson9.task_3.domain.card.BelCard;
+import com.teachmeskills.lesson9.task_3.domain.card.VisaCard;
+
 import java.util.Scanner;
+
+import static com.teachmeskills.lesson9.task_3.service.TransferService.transferFromCardToCard;
 
 public class Runner {
     public static void main(String[] args) {
@@ -18,7 +24,7 @@ public class Runner {
         System.out.println(idCardWhere);
         System.out.println(transferAmount);
 
-
+        transferFromCardToCard(idCardFrom,idCardWhere,transferAmount);
         scanner.close();
     }
 }
