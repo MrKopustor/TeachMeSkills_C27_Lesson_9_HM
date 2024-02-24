@@ -1,7 +1,5 @@
 package com.teachmeskills.lesson9.task_1.shape;
 
-import com.teachmeskills.lesson9.task_1.shape.impl.*;
-
 /**
  * Create abstract class BaseShape
  * Create the Shape Name field

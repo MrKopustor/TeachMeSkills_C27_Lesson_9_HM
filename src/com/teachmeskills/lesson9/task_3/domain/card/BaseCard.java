@@ -23,6 +23,9 @@ public abstract sealed class BaseCard permits BelCard, MasterCard, VisaCard {
         this.cardNumber = cardNumber;
     }
 
+    public void showBaseCardInfo() {
+        System.out.println("Card " + id + ", Card number: " + cardNumber + " -> " + currentBalance + ", Commission: " + commissionPercentage);
+    }
     public BaseCard() {
         this.id = ++counter;
     }
@@ -83,5 +86,17 @@ public abstract sealed class BaseCard permits BelCard, MasterCard, VisaCard {
 
     public void setCardNumber(long cardNumber) {
         this.cardNumber = cardNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "BaseCard{" +
+                "cvc=" + cvc +
+                ", currencyCode=" + currencyCode +
+                ", id=" + id +
+                ", currentBalance=" + currentBalance +
+                ", commissionPercentage=" + commissionPercentage +
+                ", cardNumber=" + cardNumber +
+                '}';
     }
 }

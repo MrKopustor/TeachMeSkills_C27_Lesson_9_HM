@@ -1,5 +1,9 @@
 package com.teachmeskills.lesson9.task_3.domain.address;
 
+/**
+ * Class ClientAddress
+ * describes class
+ */
 public class ClientAddress {
 
     private String country;

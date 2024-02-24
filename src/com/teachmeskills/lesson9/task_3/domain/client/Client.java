@@ -3,6 +3,10 @@ package com.teachmeskills.lesson9.task_3.domain.client;
 import com.teachmeskills.lesson9.task_3.domain.address.ClientAddress;
 import com.teachmeskills.lesson9.task_3.domain.card.BaseCard;
 
+/**
+ * Class Client
+ * describes class
+ */
 public class Client {
 
     private String name;
@@ -10,23 +14,29 @@ public class Client {
     private String numberPassport;
     private String dateBirth;
     private ClientAddress address;
-    private BaseCard[] cads;
+    private BaseCard[] cards;
 
-    public Client(String name, String surname, String numberPassport) {
-        this.name = name;
-        this.surname = surname;
-        this.numberPassport = numberPassport;
-    }
-
-    public Client(String name, String surname, String numberPassport, String dateBirth, ClientAddress address, BaseCard[] cads) {
+    public Client(String name, String surname, String numberPassport, String dateBirth, ClientAddress address, BaseCard[] cards) {
         this.name = name;
         this.surname = surname;
         this.numberPassport = numberPassport;
         this.dateBirth = dateBirth;
         this.address = address;
-        this.cads = cads;
+        this.cards = cards;
     }
 
+    public void showInformationClient(){
+        System.out.println(
+                getName() + " " + getSurname() + "\n" + "Cards in stock: " + showCardLength()
+        );
+    }
+
+    public BaseCard[] getCards() {
+        return cards;
+    }
+    public int showCardLength(){
+        return getCards().length;
+    }
     public String getName() {
         return name;
     }
@@ -68,10 +78,10 @@ public class Client {
     }
 
     public BaseCard[] getCads() {
-        return cads;
+        return cards;
     }
 
     public void setCads(BaseCard[] cads) {
-        this.cads = cads;
+        this.cards = cards;
     }
 }
